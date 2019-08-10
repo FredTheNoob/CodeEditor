@@ -36,6 +36,11 @@
             this.ccsprojToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textFiletxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pythonpyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLsqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pHPphpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.javaScriptJSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lualuaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileCTRLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileAsCTRLSHIFTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,13 +48,15 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             this.cmbFileType = new System.Windows.Forms.ComboBox();
-            this.xMLxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sQLsqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pHPphpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.javaScriptJSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lualuaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pctBar = new System.Windows.Forms.PictureBox();
+            this.lblLineBar = new System.Windows.Forms.Label();
+            this.lblColBar = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctBar)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -59,10 +66,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.settingsToolStripMenuItem});
+            this.settingsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(882, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,7 +111,7 @@
             this.ccsprojToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ccsprojToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.ccsprojToolStripMenuItem.Name = "ccsprojToolStripMenuItem";
-            this.ccsprojToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ccsprojToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.ccsprojToolStripMenuItem.Text = "C# (.csproj)";
             // 
             // textFiletxtToolStripMenuItem
@@ -111,7 +119,7 @@
             this.textFiletxtToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.textFiletxtToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.textFiletxtToolStripMenuItem.Name = "textFiletxtToolStripMenuItem";
-            this.textFiletxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.textFiletxtToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.textFiletxtToolStripMenuItem.Text = "VB.Net (.vb)";
             // 
             // pythonpyToolStripMenuItem
@@ -119,8 +127,48 @@
             this.pythonpyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.pythonpyToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.pythonpyToolStripMenuItem.Name = "pythonpyToolStripMenuItem";
-            this.pythonpyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pythonpyToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.pythonpyToolStripMenuItem.Text = "HTML (.html)";
+            // 
+            // xMLxmlToolStripMenuItem
+            // 
+            this.xMLxmlToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.xMLxmlToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.xMLxmlToolStripMenuItem.Name = "xMLxmlToolStripMenuItem";
+            this.xMLxmlToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.xMLxmlToolStripMenuItem.Text = "XML (.xml)";
+            // 
+            // sQLsqlToolStripMenuItem
+            // 
+            this.sQLsqlToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.sQLsqlToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.sQLsqlToolStripMenuItem.Name = "sQLsqlToolStripMenuItem";
+            this.sQLsqlToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.sQLsqlToolStripMenuItem.Text = "SQL (.sql)";
+            // 
+            // pHPphpToolStripMenuItem
+            // 
+            this.pHPphpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.pHPphpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.pHPphpToolStripMenuItem.Name = "pHPphpToolStripMenuItem";
+            this.pHPphpToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.pHPphpToolStripMenuItem.Text = "PHP (.php)";
+            // 
+            // javaScriptJSToolStripMenuItem
+            // 
+            this.javaScriptJSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.javaScriptJSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.javaScriptJSToolStripMenuItem.Name = "javaScriptJSToolStripMenuItem";
+            this.javaScriptJSToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.javaScriptJSToolStripMenuItem.Text = "JavaScript (JS)";
+            // 
+            // lualuaToolStripMenuItem
+            // 
+            this.lualuaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.lualuaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.lualuaToolStripMenuItem.Name = "lualuaToolStripMenuItem";
+            this.lualuaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.lualuaToolStripMenuItem.Text = "Lua (.lua)";
             // 
             // openFileToolStripMenuItem
             // 
@@ -193,6 +241,7 @@
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.fastColoredTextBox1.FoldingIndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.fastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fastColoredTextBox1.IsReplaceMode = false;
@@ -208,7 +257,7 @@
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(38)))), ((int)(((byte)(79)))), ((int)(((byte)(120)))));
             this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
             this.fastColoredTextBox1.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(800, 427);
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(882, 469);
             this.fastColoredTextBox1.TabIndex = 1;
             this.fastColoredTextBox1.TextAreaBorderColor = System.Drawing.Color.Gainsboro;
             this.fastColoredTextBox1.Zoom = 100;
@@ -232,58 +281,83 @@
             "PHP",
             "JS",
             "Lua"});
-            this.cmbFileType.Location = new System.Drawing.Point(677, 3);
+            this.cmbFileType.Location = new System.Drawing.Point(759, 3);
             this.cmbFileType.Name = "cmbFileType";
             this.cmbFileType.Size = new System.Drawing.Size(121, 21);
             this.cmbFileType.TabIndex = 2;
             this.cmbFileType.SelectedIndexChanged += new System.EventHandler(this.CmbFileType_SelectedIndexChanged);
             // 
-            // xMLxmlToolStripMenuItem
+            // helpToolStripMenuItem
             // 
-            this.xMLxmlToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.xMLxmlToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.xMLxmlToolStripMenuItem.Name = "xMLxmlToolStripMenuItem";
-            this.xMLxmlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.xMLxmlToolStripMenuItem.Text = "XML (.xml)";
+            this.helpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkForUpdatesToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // sQLsqlToolStripMenuItem
+            // checkForUpdatesToolStripMenuItem
             // 
-            this.sQLsqlToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.sQLsqlToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.sQLsqlToolStripMenuItem.Name = "sQLsqlToolStripMenuItem";
-            this.sQLsqlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sQLsqlToolStripMenuItem.Text = "SQL (.sql)";
+            this.checkForUpdatesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
+            this.checkForUpdatesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
             // 
-            // pHPphpToolStripMenuItem
+            // aboutToolStripMenuItem
             // 
-            this.pHPphpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.pHPphpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.pHPphpToolStripMenuItem.Name = "pHPphpToolStripMenuItem";
-            this.pHPphpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pHPphpToolStripMenuItem.Text = "PHP (.php)";
+            this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
             // 
-            // javaScriptJSToolStripMenuItem
+            // pctBar
             // 
-            this.javaScriptJSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.javaScriptJSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.javaScriptJSToolStripMenuItem.Name = "javaScriptJSToolStripMenuItem";
-            this.javaScriptJSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.javaScriptJSToolStripMenuItem.Text = "JavaScript (JS)";
+            this.pctBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pctBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(161)))));
+            this.pctBar.Location = new System.Drawing.Point(0, 494);
+            this.pctBar.Name = "pctBar";
+            this.pctBar.Size = new System.Drawing.Size(890, 14);
+            this.pctBar.TabIndex = 3;
+            this.pctBar.TabStop = false;
             // 
-            // lualuaToolStripMenuItem
+            // lblLineBar
             // 
-            this.lualuaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.lualuaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.lualuaToolStripMenuItem.Name = "lualuaToolStripMenuItem";
-            this.lualuaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lualuaToolStripMenuItem.Text = "Lua (.lua)";
+            this.lblLineBar.AutoSize = true;
+            this.lblLineBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(161)))));
+            this.lblLineBar.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLineBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.lblLineBar.Location = new System.Drawing.Point(751, 494);
+            this.lblLineBar.Name = "lblLineBar";
+            this.lblLineBar.Size = new System.Drawing.Size(34, 15);
+            this.lblLineBar.TabIndex = 4;
+            this.lblLineBar.Text = "Ln: 1";
+            // 
+            // lblColBar
+            // 
+            this.lblColBar.AutoSize = true;
+            this.lblColBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(161)))));
+            this.lblColBar.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.lblColBar.Location = new System.Drawing.Point(791, 494);
+            this.lblColBar.Name = "lblColBar";
+            this.lblColBar.Size = new System.Drawing.Size(38, 15);
+            this.lblColBar.TabIndex = 5;
+            this.lblColBar.Text = "Col: 1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(882, 508);
+            this.Controls.Add(this.lblColBar);
+            this.Controls.Add(this.lblLineBar);
+            this.Controls.Add(this.pctBar);
             this.Controls.Add(this.cmbFileType);
             this.Controls.Add(this.fastColoredTextBox1);
             this.Controls.Add(this.menuStrip1);
@@ -294,6 +368,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +394,12 @@
         private System.Windows.Forms.ToolStripMenuItem pHPphpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem javaScriptJSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lualuaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pctBar;
+        private System.Windows.Forms.Label lblLineBar;
+        private System.Windows.Forms.Label lblColBar;
     }
 }
 
